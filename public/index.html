@@ -4,62 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link icone-->
+    <script src="https://kit.fontawesome.com/5bc924b817.js" crossorigin="anonymous"></script>
+
     <title>Ticket to train</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <h1>Inscription</h1>
-<div class="container">
-    <form action="traitement.php" method="POST">
-        <label for="civilite">Civilité :</label>
-        <select id="civilite" name="civilite">
-            <option value="monsieur">Monsieur</option>
-            <option value="madame">Madame</option>
-        </select><br><br>
 
-        <label for="nom"></label>
-        <input type="text" id="nom" name="nom" placeholder="Nom" required><br><br>
-
-        <label for="prenom"></label>
-        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required><br><br>
-
-        <label for="telephone"></label>
-        <input type="tel" id="telephone" name="telephone" placeholder="Téléphone"><br><br>
-
-        <label for="email"></label>
-        <input type="email" id="email" name="email" placeholder="E-mail" required><br><br>
-
-        <label for="adresse"></label>
-        <textarea id="adresse" name="adresse" rows="4" placeholder="Adresse"></textarea><br><br>
-
-        <label for="dateNaissance">Date de naissance :</label>
-        <input type="date" id="dateNaissance" name="dateNaissance" placeholder="Date de naissance" required><br><br>
+    <!--     <div class="container">
+        <form action="traitement.php" method="POST">
+            <label for="civilite">Civilité :</label>
+            <select id="civilite" name="civilite">
+                <option value="monsieur">Monsieur</option>
+                <option value="madame">Madame</option>
+            </select><br><br>
 
 
-        <select class="form-select" aria-label="Default select example">
-            <option selected>N° de carte de réduction</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
+            <label for="nom"></label>
+            <input type="text" id="nom" name="nom" placeholder="Nom" required><br><br>
+
+            <label for="prenom"></label>
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required><br><br>
+
+            <label for="telephone"></label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Téléphone"><br><br>
+
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required><br><br>
+
+            <label for="adresse"></label>
+            <textarea id="adresse" name="adresse" rows="4" placeholder="Adresse"></textarea><br><br>
+
+            <label for="dateNaissance">Date de naissance :</label>
+            <input type="date" id="dateNaissance" name="dateNaissance" placeholder="Date de naissance" required><br><br>
 
 
-        <label for="mot-de-passe"></label>
-        <input type="password" id="mot-de-passe" name="mot-de-passe" placeholder="Mot de passe" required><br><br>
-        <label for="confirmation-mot-de-passe"></label>
-        <input type="confirmation-mot-de-passe" id="confirmation-mot-de-passe" name="confirmation-mot-de-passe" placeholder="Confirmez mot de passe" required><br><br>
-        
-        <label for="confirmation"></label>
-        <input type="checkbox" id="" name="confirmation-mot-de-passe" required>test<br><br>
-        
-        <label for="confirmation2"></label>
-        <input type="checkbox" id="" name="confirmation-mot-de-passe" required>test<br><br>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>N° de carte de réduction</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
 
-        <input type="submit" value="ENVOYER">
-    </form>
-    
-</div>
+
+            <label for="mot-de-passe"></label>
+            <input type="password" id="mot-de-passe" name="mot-de-passe" placeholder="Mot de passe" required><br><br>
+            <label for="confirmation-mot-de-passe"></label>
+            <input type="confirmation-mot-de-passe" id="confirmation-mot-de-passe" name="confirmation-mot-de-passe"
+                placeholder="Confirmez mot de passe" required><br><br>
+
+            <label for="confirmation"></label>
+            <input type="checkbox" id="" name="confirmation-mot-de-passe" required>test<br><br>
+
+            <label for="confirmation2"></label>
+            <input type="checkbox" id="" name="confirmation-mot-de-passe" required>test<br><br>
+
+            <input type="submit" value="ENVOYER">
+        </form>
+
+    </div>
+
+ -->
+    <!--Formulaire optionnel-->
+
+    <!--Selecteur-->
+    <!--     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option selected>Choisir la classe</option>
+        <option value="1">1ère classe</option>
+        <option value="2">2ème classe</option>
+    </select> -->
+
+    <div class="container d-flex justify-content-center  my-5">
+        <div class="w-50 d-flex flex-column p-3 ftColorBody rounded-3  " style="background-color: red ;">
+            <h1 class="mb-4 text-center">Inscription</h1>
+            <form class="row d-flex flex-column align-items-center">
+                <div class="mb-3 row w-25">
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected>Civilité</option>
+                        <option value="Monsieur">Monsieur</option>
+                        <option value="Madame">Madame</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 row d-flex justify-content-center ">
+                    <div class="col-sm-10 d-flex align-items-center p-3  rounded-3" style="background-color: white ;">
+                        <i class="fa-regular fa-user me-3"></i>
+                        <input id="lastname" type="text" readonly class="form-control border-0" placeholder="LastName">
+                    </div>
+                </div>
+
+                <div class="mb-3 row d-flex justify-content-center">
+                    <div class="col-sm-10 d-flex align-items-center p-3  rounded-3" style="background-color: white ;">
+                        <i class="fa-regular fa-user me-3"></i>
+                        <input type="text" class="form-control border-0" id="firstname" placeholder="FirstName">
+                    </div>
+                </div>
+
+                <div class="mb-3 row d-flex justify-content-center">
+                    <div class="col-sm-10 d-flex align-items-center p-3  rounded-3" style="background-color: white ;">
+                        <i class="fa-regular fa-envelope me-3"></i>
+                        <input type="email" class="form-control border-0" id="email" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="mb-3 row d-flex justify-content-center">
+                    <div class="col-sm-10 d-flex align-items-center p-3  rounded-3" style="background-color: white ;">
+                        <i class="fa-solid fa-phone me-3"></i>
+                        <input type="text" class="form-control border-0" id="phone" placeholder="Phone">
+                    </div>
+                </div>
+
+                <div class="mb-3 row d-flex justify-content-center">
+                    <div class="col-sm-10 d-flex align-items-center p-3  rounded-3" style="background-color: white ;">
+                        <i class="fa-regular fa-building me-3"></i>
+                        <input type="text" class="form-control border-0" id="Adress" placeholder="Adress">
+                    </div>
+                </div>
+                <div class="mb-3 row d-flex justify-content-center">
+                    <div class="col-sm-10 d-flex align-items-center p-3  rounded-3" style="background-color: white ;">
+                        <i class="fa-solid fa-cake-candles me-3"></i>
+                        <input type="date" class="form-control border-0" id="birthday" placeholder="birthday">
+                    </div>
+                </div>
+
+                <div class="mb-3 row d-flex justify-content-center">
+                    <!--  <input type="text" class="form-control" id="card"> -->
+                    <div class="col-sm-10 d-flex align-items-center p-3  rounded-3 " style="background-color: white ;">
+                        <i class="fa-solid fa-percent me-3"></i>
+                        <select class="form-select form-select w-100 accordion border-0"
+                            aria-label=".form-select example">
+                            <option selected>Choisir la carte de réduction</option>
+                            <option value="option A">Carte A</option>
+                            <option value="option B">Carte B</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-3 row d-flex justify-content-center">
+                    <div class="col-sm-10 d-flex align-items-center p-3  rounded-3" style="background-color: white ;">
+                        <i class="fa-solid fa-lock me-3"></i>
+                        <input type="password" class="form-control border-0" id="password" placeholder="password">
+                    </div>
+                </div>
+
+                <div class="mb-3 row d-flex justify-content-center">
+                    <div class="col-sm-10 d-flex align-items-center p-3  rounded-3" style="background-color: white ;">
+                        <i class="fa-solid fa-lock me-3"></i>
+                        <input type="password" class="form-control border-0" id="confirmPassword"
+                            placeholder="Confirm Password">
+                    </div>
+                </div>
+                <button type="submit" class="btn primary-btn">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
 
     <script src="js/main.min.js"></script>
 </body>
