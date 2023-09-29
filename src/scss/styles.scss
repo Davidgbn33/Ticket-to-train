@@ -1,53 +1,57 @@
 @import 'myboostrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-#ftColorBody {
-    background-color: #0F084B;
+.ftColorBody {
+  background-color: #0f084b;
 }
 
-#ftColorForm {
-    background-color: #9AD2CB;
+.ftColorForm {
+  background-color: #9ad2cb;
 }
 
 h1,
 h2,
 div {
-    font-family: 'Roboto', sans-serif;
-    color: #0F084B;
+  font-family: 'Roboto', sans-serif;
+  color: #0f084b;
 }
 
 h3 {
-    // Texte gras et sousligné dans le menu déroulant des cartes de réduction
-    font-family: 'Roboto', sans-serif;
-    line-height: 23px;
-    text-decoration: underline;
-    font-weight: bold;
-    color: #0F084B;
+  // Texte gras et sousligné dans le menu déroulant des cartes de réduction
+  font-family: 'Roboto', sans-serif;
+  line-height: 23px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0f084b;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    color: #0F084B;
+  font-family: 'Roboto', sans-serif;
+  color: #0f084b;
 }
 
 h4 {
-    // Texte blanc sur fond foncé
-    font-family: 'Roboto', sans-serif;
-    color: white;
+  // Texte blanc sur fond foncé
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
-#ftBlueColor {
-    color: #0F084B;
+.ftBlueColor {
+  color: #0f084b;
 }
 
 #ftGreenColor {
-    color: #9AD2CB;
+  color: #9ad2cb;
 }
 
-#ftGreenBackground {
-    background-color: #0BEB77;
+.ftGreenBackground {
+  background-color: #0beb77;
 }
 
-#ftDegradGreenBackground {
-    background: linear-gradient(to right, rgb(154, 210, 203, 100), rgb(11, 235, 119, 100));
+.ftDegradGreenBackground {
+  background: linear-gradient(
+    to right,
+    rgb(154, 210, 203, 100),
+    rgb(11, 235, 119, 100)
+  );
 }
