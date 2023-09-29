@@ -1,1 +1,53 @@
 @import 'myboostrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#ftColorBody {
+    background-color: #0F084B;
+}
+
+#ftColorForm {
+    background-color: #9AD2CB;
+}
+
+h1,
+h2,
+div {
+    font-family: 'Roboto', sans-serif;
+    color: #0F084B;
+}
+
+h3 {
+    // Texte gras et sousligné dans le menu déroulant des cartes de réduction
+    font-family: 'Roboto', sans-serif;
+    line-height: 23px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #0F084B;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #0F084B;
+}
+
+h4 {
+    // Texte blanc sur fond foncé
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#ftBlueColor {
+    color: #0F084B;
+}
+
+#ftGreenColor {
+    color: #9AD2CB;
+}
+
+#ftGreenBackground {
+    background-color: #0BEB77;
+}
+
+#ftDegradGreenBackground {
+    background: linear-gradient(to right, rgb(154, 210, 203, 100), rgb(11, 235, 119, 100));
+}
