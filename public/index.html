@@ -9,7 +9,57 @@
 </head>
 
 <body>
+    <h1>Inscription</h1>
+<div class="container">
+    <form action="traitement.php" method="POST">
+        <label for="civilite">Civilité :</label>
+        <select id="civilite" name="civilite">
+            <option value="monsieur">Monsieur</option>
+            <option value="madame">Madame</option>
+        </select><br><br>
 
+        <label for="nom"></label>
+        <input type="text" id="nom" name="nom" placeholder="Nom" required><br><br>
+
+        <label for="prenom"></label>
+        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required><br><br>
+
+        <label for="telephone"></label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Téléphone"><br><br>
+
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="E-mail" required><br><br>
+
+        <label for="adresse"></label>
+        <textarea id="adresse" name="adresse" rows="4" placeholder="Adresse"></textarea><br><br>
+
+        <label for="dateNaissance">Date de naissance :</label>
+        <input type="date" id="dateNaissance" name="dateNaissance" placeholder="Date de naissance" required><br><br>
+
+
+        <select class="form-select" aria-label="Default select example">
+            <option selected>N° de carte de réduction</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+
+
+        <label for="mot-de-passe"></label>
+        <input type="password" id="mot-de-passe" name="mot-de-passe" placeholder="Mot de passe" required><br><br>
+        <label for="confirmation-mot-de-passe"></label>
+        <input type="confirmation-mot-de-passe" id="confirmation-mot-de-passe" name="confirmation-mot-de-passe" placeholder="Confirmez mot de passe" required><br><br>
+        
+        <label for="confirmation"></label>
+        <input type="checkbox" id="" name="confirmation-mot-de-passe" required>test<br><br>
+        
+        <label for="confirmation2"></label>
+        <input type="checkbox" id="" name="confirmation-mot-de-passe" required>test<br><br>
+
+        <input type="submit" value="ENVOYER">
+    </form>
+    
+</div>
 
     <script src="js/main.min.js"></script>
 </body>
